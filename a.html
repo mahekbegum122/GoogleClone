@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Google</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-image: url(m.jpj.jpg);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .center{
+            width: 60%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        i{
+            color: black;
+            font-size: 25px;
+            margin: 0px 5px;
+        }
+        .inp-grp{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            border-radius: 25px;
+            width: 80%;
+        }
+        .text-feild{
+            font-size: 25px;
+            outline: none;
+            border: none;
+            padding: 10px;
+            width: 540px;
+            height: 40px; 
+        }
+        .fav-card{
+            width: 80px;
+            height: 80px;
+            background-color:transparent;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 7px;
+            color: white;
+        }   
+        .fav-card:hover{
+    background-color: rgba(255, 255, 255, 0.199);
+    }
+    .fav-card:hover .dots{ 
+    opacity: 1; 
+    }
+        .circle{
+            width: 60%;
+            height: 60%;
+            border-radius: 50%;
+            background-color:white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5px;
+
+        }
+        .fav-list{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 30px;
+        }
+        .dots{
+            font-size: 15px;
+            top: 5px;
+            position: relative;
+            left: 30px;
+            color: white;
+            opacity: 0;
+            transition: 0.4s all ease;
+        }
+        .linked{
+            width: 100%;
+            border-radius: 50%;
+        }
+        .github{
+            width: 100%;
+            border-radius: 50%;
+        }
+        .vs{
+            width: 100%;
+            border-radius: 50%;
+        }
+        .leedcode{
+            width: 100%;
+            border-radius: 50%;
+        }
+        .whatsapp{
+            width: 100%;
+            border-radius: 50%;
+        }
+        .perplexity{
+            width: 100%;
+            border-radius: 50%;
+        }
+        .fav-card p{
+            color: white;
+        }
+        .topright{
+            width: 200px;
+            height: 50px;
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            color: white;
+        }
+        .grid{
+            width: 0px;
+            color: white;
+        }
+        .dottss{
+            display: flex;
+            color: white;
+            
+        }
+        .na{
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+            <img src="google.png" alt="" width="40%" style="margin-bottom: 30px;">
+            <div class="inp-grp">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <form action="https://google.com/search">
+                    <input type="text" class="text-feild" placeholder="Search Google or type a URL" name="q">
+                </form>
+                <i class="fa-solid fa-microphone"></i>
+                <i class="fa-solid fa-camera"></i>
+        </div>
+        <div class="fav-list">
+            <div class="fav-card">
+                <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                <div class="circle">
+                    <img src="linkedin.png" class="linked" alt="">
+                </div>
+                <p>
+                    LinkedIn
+                </p>
+            </div>
+            <div class="fav-card">
+                <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                <div class="circle">
+                    <img src="GitHub.png" class="github" alt="">
+                </div>
+                <p>
+                    GitHub
+                </p>
+            </div>
+            <div class="fav-card">
+                <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                <div class="circle">
+                    <img src="vs.png" class="vs" alt="">
+                </div>
+                <p>
+                    VSCode
+                </p>
+            </div>
+            <div class="fav-card">
+                <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                <div class="circle">
+                    <img src="LeetCodee.png" class="leedcode" alt="">
+                </div>
+                <p>
+                    LeetCode
+                </p>
+            </div>
+            <div class="fav-card">
+                <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                <div class="circle">
+                    <img src="whatsaap.png" class="whatsapp" alt="">
+                </div>
+                <p>
+                    Whatsapp
+                </p>
+            </div>
+            <div class="fav-card">
+                <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                <div class="circle">
+                    <img src="perplexity-ai-icon.png" class="perplexity" alt="">
+                </div>
+                <p>
+                    Perplexity
+                </p>
+            </div>
+        </div>
+    </div>
+ </div>
+ <div class="topright">
+     <p>Gmail</p>
+     <p>Images</p>
+    <div class="dottss">
+        <i class="fa-solid fa-ellipsis-vertical grid"></i>
+        <i class="fa-solid fa-ellipsis-vertical grid"></i>
+        <i class="fa-solid fa-ellipsis-vertical grid"></i>
+    </div>
+    <img src="profile-picturee.png" alt="" class="na">
+ </div>
+</body>
+</html>
